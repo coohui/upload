@@ -214,8 +214,6 @@ export default {
     },
 
     async sendRequest(urls, max=4,retrys=3) {
-      console.log(urls,max)
-      
       return new Promise((resolve,reject) => {
         const len = urls.length;
         let idx = 0;

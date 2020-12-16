@@ -47,7 +47,6 @@ class Controller {
 
   }
   async handleMerge(req, res) {
-
     const data = await resolvePost(req)
     const {fileHash, filename, size } = data
     const ext = extractExt(filename)
@@ -59,8 +58,6 @@ class Controller {
         message: "file merged success"
       })
     )
-
-  
   }
   async handleUpload(req, res) {
     const multipart = new multiparty.Form()
